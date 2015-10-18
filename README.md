@@ -1,0 +1,3 @@
+# tango-colors
+
+Tango colors definition for use with python, latex and other ...
