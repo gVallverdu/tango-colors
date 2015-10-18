@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{tikz}
+\usepackage{tango}
+\usepackage{url}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{10pt}
+
+\title{Tango colors}
+\author{Germain \textsc{Salvato Vallverdu}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Tango colors}
+
+\begin{center}
+\begin{tikzpicture}[y={(0cm, -.7cm)}, x={(.7cm, 0cm)}]
+    \tikzstyle{label} = [aluminium4, font={\sffamily\bfseries\Large}, anchor=east]
+    \tikzstyle{box} = [rectangle, minimum height=1.8cm, minimum width=1.8cm,
+                       rounded corners=5pt, fill=#1]
+    \tikzstyle{cname}= [font={\sffamily\footnotesize}, text=#1]
+    
+    \node[label, anchor=south] at (2, -1.4) {Light};
+    \node[label, anchor=south] at (6, -1.4) {Normal};
+    \node[label, anchor=south] at (10, -1.4) {Dark};
+    
+    \node[label] at (0,0) {Butter};
+    \node[box=butter1, cname=aluminium6] at (2, 0) {butter1};
+    \node[box=butter2, cname=aluminium6] at (6, 0) {butter2};
+    \node[box=butter3, cname=aluminium1] at (10, 0) {butter3};
+    
+    \node[label] at (0, 3) {Orange};
+    \node[box=orange1, cname=aluminium6] at (2, 3) {orange1};
+    \node[box=orange2, cname=aluminium6] at (6, 3) {orange2};
+    \node[box=orange3, cname=aluminium1] at (10, 3) {orange3};    
+
+    \node[label] at (0,6) {Chocolate};
+    \node[box=chocolate1, cname=aluminium6] at (2, 6) {chocolate1};
+    \node[box=chocolate2, cname=aluminium6] at (6, 6) {chocolate2};
+    \node[box=chocolate3, cname=aluminium1] at (10, 6) {chocolate3};    
+
+    \node[label] at (0,9) {Chameleon};
+    \node[box=chameleon1, cname=aluminium6] at (2, 9) {chameleon1};
+    \node[box=chameleon2, cname=aluminium6] at (6, 9) {chameleon2};
+    \node[box=chameleon3, cname=aluminium1] at (10, 9) {chameleon3};    
+
+    \node[label] at (0,12) {Sky Blue};
+    \node[box=skyblue1, cname=aluminium6] at (2, 12) {skyblue1};
+    \node[box=skyblue2, cname=aluminium1] at (6, 12) {skyblue2};
+    \node[box=skyblue3, cname=aluminium1] at (10, 12) {skyblue3};    
+
+    \node[label] at (0,15) {Plum};
+    \node[box=plum1, cname=aluminium6] at (2, 15) {plum1};
+    \node[box=plum2, cname=aluminium1] at (6, 15) {plum2};
+    \node[box=plum3, cname=aluminium1] at (10, 15) {plum3};    
+
+    \node[label] at (0,18) {Scarlet Red};
+    \node[box=scarletred1, cname=aluminium6] at (2, 18) {scarletred1};
+    \node[box=scarletred2, cname=aluminium1] at (6, 18) {scarletred2};
+    \node[box=scarletred3, cname=aluminium1] at (10, 18) {scarletred3};
+
+    \node[label] at (0,21) {Aluminium};
+    \node[box=aluminium1, cname=aluminium6] at (2, 21) {aluminium1};
+    \node[box=aluminium2, cname=aluminium6] at (6, 21) {aluminium2};
+    \node[box=aluminium3, cname=aluminium6] at (10, 21) {aluminium3};
+    \node[box=aluminium4, cname=aluminium1] at (2, 24) {aluminium4};
+    \node[box=aluminium5, cname=aluminium1] at (6, 24) {aluminium5};
+    \node[box=aluminium6, cname=aluminium1] at (10, 24) {aluminium6};
+\end{tikzpicture}
+\end{center}
+
+\section*{Alternative names}
+
+\begin{tabular}{llcllcll}
+    \hline
+    butter1 & LightButter  & \qquad 
+        &  orange1 & LightOrange & \qquad
+        &  chocolate1 & LightChocolate \\
+    butter2 & Butter       &       
+        &  orange2 & Orange &
+        & chocolate2 & Chocolate\\
+    butter3 & DarkButter   &       
+        &  orange3 & DarkOrange &
+        & chocolate3 & DarkChocolate \\
+    \hline
+    chameleon1 & LightChameleon  & 
+        & skyblue1 & LightSkyBlue &
+        & plum1 & LightPlum \\
+    chameleon2 & Chameleon       &       
+        & skyblue2 & SkyBlue &
+        & plum2 & Plum \\
+    chameleon3 & DarkChameleon   &       
+        & skyblue3 & DarkSkyBlue &
+        & plum3 & DarkPlum \\
+    \hline
+    skarletred1 & LightSkarletRed  \\
+    skarletred2 & SkarletRed \\
+    skarletred3 & DarkSkarletRed \\
+    \hline
+\end{tabular}
+
+\begin{thebibliography}{9}
+    \bibitem{tango} Tango project guidelines \url{http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines#Color_Palette}
+\end{thebibliography}
+
+\end{document}
